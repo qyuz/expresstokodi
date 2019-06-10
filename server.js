@@ -3,6 +3,10 @@ const requestToKodi = require('./request-to-kodi');
 
 const app = express();
 const port = 3000;
+
+
+app.use(express.static('client/target'));
+
 app.get('/', async(req, res) => {
 	try {
 		const path = req.query.path;
