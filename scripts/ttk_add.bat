@@ -1,0 +1,1 @@
+echo "%NVM_SYMLINK%/node" c:/vcs/expresstokodi/cli.js https://twitch.tv/%1 > c:/vcs/expresstokodi/scripts/twitch_to_kodi_%1.bat

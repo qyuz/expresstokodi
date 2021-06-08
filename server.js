@@ -1,11 +1,9 @@
 const express = require('express');
 const requestToKodi = require('./request-to-kodi');
 
+
 const app = express();
 const port = 3000;
-
-
-app.use(express.static('client'));
 
 app.get('/', async (req, res) => {
     try {
@@ -19,4 +17,7 @@ app.get('/', async (req, res) => {
         console.error('error handling request', error);
     }
 });
+
+app.use(express.static('client'));
+
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
