@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node server",
+    "watch": "start /b npm run webpack -- --watch && npm start",
     "webpack": "node ./node_modules/webpack/bin/webpack --config client/webpack.config.js"
   },
   "author": "",

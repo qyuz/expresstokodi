@@ -1,6 +1,8 @@
-`npm run webpack` build webpack
+`npm start` run server
 
-`start /b npm run webpack -- --watch && node server` watch webpack and run server
+`npm run watch` watch webpack and run server
+
+`npm run webpack` build webpack
 
 ### Launchy
 
